@@ -1,6 +1,7 @@
 include $(ROOTDIR)/makefiles/config.mk
 
-INCLUDE = $(ZINCLUDE) $(EXTERNAL_INCLUDE)
+INCLUDE = $(ZINCLUDE) $(EXTERNAL_INCLUDE) -I$(ROOTDIR)/fbreader/src/formats/unrar -D_UNIX -DRARDLL
+
 
 HEADERS = $(wildcard *.h)
 SOURCES_CPP = $(wildcard *.cpp)
